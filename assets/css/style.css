@@ -29,7 +29,12 @@ family=Lato -> Títulos, textos
 /* FONTS */
 
 /* VARIÁVEIS */
-:root{}
+:root{
+    --menusFont:'Montserrat';
+    --txtFont: 'Lato';
+    --corTitulo: #e5e5e5;
+    --fontTitulo: 26px;
+}
   
 /* GERAL */
 html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
@@ -67,19 +72,36 @@ html{}
 /* HTML */
   
 /* BODY */
-body{}
+body{
+    Background: #141414;
+}
 /* BODY */
   
 /* HEADER */
 header{}
+    header{
+         Background: linear-gradient(to bottom, rgba(0,0,0,.7) 10%, rgba(0,0,0,0));
+         background-image:url(../img/movies/amigas.jpg);
+         height:30rem;
+
+  }
+
 /* HEADER */
   
 /* FOOTER */
-footer{}
+footer{
+    Border: 1px solid rgb(128 128 128 / 26%)
+}
 /* FOOTER */
 
 /* INICIAL */
 main{}
+figure img{
+    display: block;
+}
+section#secao-continuar-assistindo{
+    background:linear-gradient(to bottom,rgba(20,20,20,0) 0,rgba(20,20,20,.15) 15%,rgba(20,20,20,.35) 29%,rgba(20,20,20,.58) 44%,#141414 68%,#141414 100%);
+}
 /* INICIAL */
 
 /* EXTRAS */
@@ -99,5 +121,11 @@ main{}
 /* MEDIA QUERIES */
     @media screen and (min-width: 400px) {}
   
-    @media screen and (min-width: 800px) {}
+    @media screen and (min-width: 800px) {
+         header .container{
+             background-image:url(../img/movies/ted.webp);
+             height:40rem;
+  }
+
+    }
 /* MEDIA QUERIES */
