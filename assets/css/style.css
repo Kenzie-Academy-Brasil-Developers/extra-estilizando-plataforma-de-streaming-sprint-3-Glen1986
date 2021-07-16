@@ -35,7 +35,9 @@ family=Lato -> Títulos, textos
     --corTitulo: #e5e5e5;
     --fontTitulo: 26px;
 }
-  
+ .hidden{
+    opacity: 0;
+} 
 /* GERAL */
 html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     margin: 0;
@@ -65,6 +67,7 @@ div.container{
     max-width: 1140px;
     margin:0 auto;
 }
+
 /* GERAL */
   
 /* HTML */
@@ -74,18 +77,59 @@ html{}
 /* BODY */
 body{
     Background: #141414;
+    font-size: 17px;
 }
 /* BODY */
   
+ section.web{
+         Background: linear-gradient(to bottom, rgba(0,0,0,.7) 10%, rgba(0,0,0,0));
+         background-image:url(../img/movies/ted.webp);
+         background-size: 100%;
+         background-repeat: no-repeat;
+         background-position: top;
+         height:100%
+     }
 /* HEADER */
 header{}
-    header{
-         Background: linear-gradient(to bottom, rgba(0,0,0,.7) 10%, rgba(0,0,0,0));
-         background-image:url(../img/movies/amigas.jpg);
-         height:30rem;
+    nav span.abrir-submenu.mobile-element{
+        cursor:pointer;
+        padding-top:1rem;
+        margin-left:-15vw;
+        color:#ffffff;
+        font-size: 14px;
+        font-weight:300;
+    }
+    header div.container div.flex a.logo figure img{
+        width:16vw;
+    }
+    nav span.abrir-submenu.mobile-element i.fas{
+        color: white;
+        position: relative;
+        font-size:30px;
+        left:4vw;
+    }
 
-  }
-
+    nav span.abrir-submenu.mobile-element:hover header div.flex-column nav ul{
+        opacity: 100;
+    }   
+   /* header div.flex-column nav ul{
+    opacity: 100;
+    }*/ 
+    header div.flex-column div.menu-usuario span.pesquisar img{
+        width:5vw;
+    }
+    div.container{
+        padding: 5vw;
+    }
+    header div.container div.flex{
+        justify-content: space-between;
+    }
+    span.pesquisar{
+        position:relative;
+        top:-0.5rem;
+        right:42vw;
+        cursor: pointer;
+    }
 /* HEADER */
   
 /* FOOTER */
@@ -99,9 +143,36 @@ main{}
 figure img{
     display: block;
 }
-section#secao-continuar-assistindo{
-    background:linear-gradient(to bottom,rgba(20,20,20,0) 0,rgba(20,20,20,.15) 15%,rgba(20,20,20,.35) 29%,rgba(20,20,20,.58) 44%,#141414 68%,#141414 100%);
-}
+    section.secao-destaque{
+        position: relative;
+        top:-5rem;
+    }
+    article.secao-destaque-conteudo figure img{
+        width:45vw;
+    }
+    main.pagina-inicial section.secao-destaque article.secao-destaque-conteudo p{
+        color:#ffffff;
+        width:50%;
+    }
+    section#secao-continuar-assistindo{
+        background:linear-gradient(to bottom,rgba(20,20,20,0) 0,rgba(20,20,20,.15) 15%,rgba(20,20,20,.35) 29%,rgba(20,20,20,.58) 44%,#141414 68%,#141414 100%);
+    }
+    main .secao-destaque .container .secao-destaque-conteudo .secao-destaque-buttons{
+        margin-top: 2vh;
+
+    }
+    main .secao-destaque .container .secao-destaque-conteudo .secao-destaque-buttons .assistir, .mais-informacoes{
+        background-color: #ffffff;
+        color:black;
+        font-size:12px;
+        border-radius: 6px;
+        padding:0.5rem 1rem;
+        border: none;
+    }
+    main .secao-destaque .container .secao-destaque-conteudo .secao-destaque-buttons .mais-informacoes{
+        background-color: grey;
+
+    }
 /* INICIAL */
 
 /* EXTRAS */
@@ -123,8 +194,8 @@ section#secao-continuar-assistindo{
   
     @media screen and (min-width: 800px) {
          header .container{
-             background-image:url(../img/movies/ted.webp);
-             height:40rem;
+/*             background-image:url(../img/movies/ted.webp);
+*/             height:40rem;
   }
 
     }
